@@ -1,10 +1,15 @@
 Silex, a simple Web Framework
 =============================
 
-**WARNING** Silex 1.x is not maintained anymore. Please, upgrade to Silex 2.x.
+**WARNING**: Silex is in maintenance mode only. Ends of life is set to June
+2018. Read more on `Symfony's blog <http://symfony.com/blog/the-end-of-silex>`_.
+But Silex can be saved! Any **help** to keep Silex alive is greatly appreciated.
+See `#1593 <https://github.com/silexphp/Silex/issues/1593>`_.
 
 Silex is a PHP micro-framework to develop websites based on `Symfony
-components`_::
+components`_:
+
+.. code-block:: php
 
     <?php
 
@@ -18,7 +23,7 @@ components`_::
 
     $app->run();
 
-Silex works with PHP 5.3.9 or later.
+Silex works with PHP 5.5.9 or later.
 
 Installation
 ------------
@@ -27,7 +32,7 @@ The recommended way to install Silex is through `Composer`_:
 
 .. code-block:: bash
 
-    composer require silex/silex "~1.3"
+    composer require silex/silex "~2.0"
 
 Alternatively, you can download the `silex.zip`_ file and extract it.
 
@@ -44,8 +49,8 @@ To run the test suite, you need `Composer`_ and `PHPUnit`_:
 
 .. code-block:: bash
 
-    $ composer install
-    $ phpunit
+    composer install
+    phpunit
 
 Community
 ---------
