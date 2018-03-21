@@ -31,6 +31,12 @@ class Comment
      * @var \MicroCMS\Domain\Article
      */
     private $article;
+       /**
+     * Comment author.
+     *
+     * @var \MicroCMS\Domain\User
+     */
+    private $author;
 
     public function getId() {
         return $this->id;
@@ -65,6 +71,10 @@ class Comment
 
     public function setArticle(Article $article) {
         $this->article = $article;
+        return $this;
+    }
+      public function setAuthor(User $author) {
+        $this->author = $author;
         return $this;
     }
 }
